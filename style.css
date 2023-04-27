@@ -1,2 +1,55 @@
-.keyboard {
+.container {
+  margin: auto;
+  width: 70%;
+  margin-top: 100px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #b6b8b9, #d8dadc);
+  box-shadow: 20px 20px 60px #acadaf, -20px -20px 60px #e8ebed;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f9fbfc;
+  font-size: 35px;
+  text-align: center;
+}
+.textatea {
+  display: block;
+  width: 80%;
+  margin: auto;
+  height: 100px;
+  background-color: #e8ebed;
+  border: #939393;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #3b3b3b;
+  font-size: 20px;
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background: #939393;
+  box-shadow: 20px 20px 60px #acadaf, -20px -20px 60px #e8ebed;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 5px;
+}
+.key:hover {
+  background: #3b3b3b;
+  transition: 0.5s;
+}
+.letter {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f9fbfc;
+  font-size: 20px;
+  width: 20px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f9fbfc;
+  margin-top: 20px;
+  text-align: center;
 }
