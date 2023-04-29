@@ -101,3 +101,4 @@ function createButton(obj) {
   key.setAttribute("data", JSON.stringify(obj));
   return key;
 }
+console.log(divOne);
