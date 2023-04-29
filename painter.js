@@ -7,48 +7,6 @@ textatea.className = "textatea";
 const h1 = document.createElement("h1");
 h1.innerText = "RSS Virtual Keyboard";
 
-//////////////////Create keys//////////////////////////////////////
-// const key = document.createElement("div");
-// key.className = "key";
-
-// const letter = document.createElement("div");
-// letter.className = "letter";
-// letter.innerText = "A";
-// const key = createButton({
-//   id: "",
-//   ruLowCase: "S",
-//   ruUpperCase: "S",
-//   enLowCase: "S",
-//   enUpperCase: "S",
-// });
-
-// const keyDouble = document.createElement("div");
-// keyDouble.className = "key-double";
-
-// const letterDouble = document.createElement("div");
-// letterDouble.className = "letter-double";
-// letterDouble.innerText = "Shift";
-
-// const keyTab = document.createElement("div");
-// keyTab.className = "key-tab";
-
-// const letterTab = document.createElement("div")
-// letterTab.className = "letter-tab";
-// letterTab.innerText = "Tab";
-
-const keyBackspace = document.createElement("div");
-keyBackspace.className = "key-backspace";
-
-const letterBackspace = document.createElement("div");
-letterBackspace.className = "letter-backspace";
-letterBackspace.innerText = "Backspace";
-
-const keySpace = document.createElement("div");
-keySpace.className = "key-space";
-
-const letterSpace = document.createElement("div");
-letterSpace.className = "letter-space";
-
 ///////Create div for keys////////////////////
 
 const divRowOne = document.createElement("div");
@@ -84,14 +42,7 @@ divContainer.appendChild(divRowFour);
 divContainer.appendChild(divRowFive);
 
 ////////////////////////////////////////////////////////////////
-/* {
-    id: "",
-    ruLowCase: "",
-    ruUpperCase: "",
-    enLowCase: "",
-    enUpperCase: "",
 
-}*/
 function createButton(classes, text, data) {
   const key = document.createElement("div");
   key.className = classes;
