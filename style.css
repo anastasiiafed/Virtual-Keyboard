@@ -1,6 +1,6 @@
 .container {
   margin: auto;
-  width: 70%;
+  width: 900px;
   margin-top: 100px;
   border-radius: 20px;
   background: linear-gradient(145deg, #b6b8b9, #d8dadc);
@@ -35,12 +35,12 @@ h1 {
 
   padding-top: 10px;
   padding-left: 10px;
-  margin: 5px;
+  margin: 2px;
 }
 .key:hover,
 .key-double:hover {
   background: #3b3b3b;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .letter,
 .letter-double,
@@ -60,7 +60,7 @@ h1 {
   background: #686767;
   padding-top: 10px;
   padding-left: 10px;
-  margin: 5px;
+  margin: 2px;
 }
 
 .key-tab {
@@ -70,7 +70,7 @@ h1 {
   background: #686767;
   padding-top: 10px;
   padding-left: 10px;
-  margin: 5px;
+  margin: 2px;
 }
 .key-backspace {
   width: 120px;
@@ -79,17 +79,17 @@ h1 {
   background: #686767;
   padding-top: 10px;
   padding-left: 10px;
-  margin: 5px;
+  margin: 2px;
 }
 
 .key-space {
-  width: 340px;
+  width: 450px;
   height: 50px;
   border-radius: 20px;
   background: #686767;
   padding-top: 10px;
   padding-left: 10px;
-  margin: 5px;
+  margin: 2px;
 }
 
 p {
@@ -97,4 +97,14 @@ p {
   color: #f9fbfc;
   margin-top: 20px;
   text-align: center;
+}
+
+.div-row-one,
+.div-row-two,
+.div-row-three,
+.div-row-four,
+.div-row-five {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
