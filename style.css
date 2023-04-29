@@ -1,6 +1,6 @@
 .container {
   margin: auto;
-  width: 900px;
+  width: 800px;
   margin-top: 100px;
   border-radius: 20px;
   background: linear-gradient(145deg, #b6b8b9, #d8dadc);
@@ -14,6 +14,7 @@ h1 {
   color: #f9fbfc;
   font-size: 35px;
   text-align: center;
+  margin-top: 13px;
 }
 .textatea {
   display: block;
@@ -29,73 +30,41 @@ h1 {
 
 .key {
   width: 50px;
-  height: 50px;
-  border-radius: 20px;
   background: #939393;
-
-  padding-top: 10px;
-  padding-left: 10px;
-  margin: 2px;
 }
 .key:hover,
-.key-double:hover {
+.key-double:hover,
+.key-tab:hover,
+.key-backspace:hover,
+.key-space:hover {
   background: #3b3b3b;
   transition: 0.3s;
-}
-.letter,
-.letter-double,
-.letter-tab,
-.letter-backspace,
-.letter-space {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #f9fbfc;
-  font-size: 20px;
-  width: 20px;
 }
 
 .key-double {
   width: 110px;
-  height: 50px;
-  border-radius: 20px;
   background: #686767;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin: 2px;
 }
 
 .key-tab {
-  width: 60px;
-  height: 50px;
-  border-radius: 20px;
+  width: 55px;
   background: #686767;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin: 2px;
 }
 .key-backspace {
   width: 120px;
-  height: 50px;
-  border-radius: 20px;
+  height: 45px;
   background: #686767;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin: 2px;
 }
 
 .key-space {
-  width: 450px;
-  height: 50px;
-  border-radius: 20px;
+  width: 360px;
   background: #686767;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin: 2px;
 }
 
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #f9fbfc;
-  margin-top: 20px;
+  margin-top: 16px;
   text-align: center;
 }
 
@@ -107,4 +76,15 @@ p {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+.key-all {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f9fbfc;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: sfg;
 }

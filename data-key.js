@@ -395,17 +395,34 @@ let divFive = [
   {
     id: "",
     text: "🠔",
+    ruLowCase: "🠔",
   },
   {
     id: "",
     text: "🠗",
+    ruLowCase: "🠗",
   },
   {
     id: "",
     text: "🠖",
+    ruLowCase: "🠖",
   },
   {
     id: "",
     text: "Ctrl",
   },
 ];
+
+const ruMap = {};
+
+const allArr = divOne
+  .concat(divTwo)
+  .concat(divThree)
+  .concat(divFour)
+  .concat(divFive);
+
+allArr.forEach((x) => {
+  if (x.ruLowCase) {
+    ruMap[x.ruLowCase] = x;
+  }
+});

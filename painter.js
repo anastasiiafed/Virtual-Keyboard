@@ -43,60 +43,60 @@ divContainer.appendChild(divRowFive);
 
 ////////////////////////////////////////////////////////////////
 
-function createButton(classes, text, data) {
+function createButton(classes, text, das) {
   const key = document.createElement("div");
   key.className = classes;
-  const letter = document.createElement("div");
-  letter.className = "letter";
-  letter.innerText = text;
-  key.appendChild(letter);
-  key.setAttribute("data", JSON.stringify(data));
+  key.innerText = text;
+  key.setAttribute("data", JSON.stringify(das));
+
+  das.HTMLkey = key;
+
   return key;
 }
 
 divOne.forEach((obj) => {
   if (obj.text && obj.text == "Backspace") {
-    const btn = createButton("key-backspace", obj.text, obj);
+    const btn = createButton("key-backspace key-all", obj.text, obj);
     divRowOne.appendChild(btn);
   } else {
-    const btn = createButton("key", obj.ruLowCase, obj);
+    const btn = createButton("key key-all", obj.ruLowCase, obj);
     divRowOne.appendChild(btn);
   }
 });
 
 divTwo.forEach((obj) => {
   if (obj.text && (obj.text == "Tab" || obj.text == "Del")) {
-    const btn = createButton("key-tab", obj.text, obj);
+    const btn = createButton("key-tab key-all", obj.text, obj);
     divRowTwo.appendChild(btn);
   } else {
-    const btn = createButton("key", obj.ruLowCase, obj);
+    const btn = createButton("key key-all", obj.ruLowCase, obj);
     divRowTwo.appendChild(btn);
   }
 });
 divThree.forEach((obj) => {
   if (obj.text && (obj.text == "CapsLock" || obj.text == "Enter")) {
-    const btn = createButton("key-double", obj.text, obj);
+    const btn = createButton("key-double key-all", obj.text, obj);
     divRowThree.appendChild(btn);
   } else {
-    const btn = createButton("key", obj.ruLowCase, obj);
+    const btn = createButton("key key-all", obj.ruLowCase, obj);
     divRowThree.appendChild(btn);
   }
 });
 divFour.forEach((obj) => {
   if (obj.text && obj.text == "Shift") {
-    const btn = createButton("key-double", obj.text, obj);
+    const btn = createButton("key-double key-all", obj.text, obj);
     divRowFour.appendChild(btn);
   } else {
-    const btn = createButton("key", obj.ruLowCase, obj);
+    const btn = createButton("key key-all", obj.ruLowCase, obj);
     divRowFour.appendChild(btn);
   }
 });
 divFive.forEach((obj) => {
   if (obj.text && obj.text == "Space") {
-    const btn = createButton("key-space", "", obj);
+    const btn = createButton("key-space key-all", "", obj);
     divRowFive.appendChild(btn);
   } else {
-    const btn = createButton("key", obj.text, obj);
+    const btn = createButton("key key-all", obj.text, obj);
     divRowFive.appendChild(btn);
   }
 });
