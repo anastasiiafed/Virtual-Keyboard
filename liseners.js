@@ -10,30 +10,31 @@ function clicker(event) {
 
 // /////////////////////////////////////////////
 document.addEventListener("keydown", (ev) => {
-  const obj = ruMap[ev.key];
-  console.log(obj);
+  const obj =
+    ruMap[ev.key.toLowerCase()] ||
+    enMap[ev.key.toLowerCase()] ||
+    txtMap[ev.code];
+  console.log(ev);
+  if (obj) {
+    obj.HTMLkey.classList.add("key-active");
+  }
 });
 
-const map = {
-  f: 1212,
-  b: "dfgdfg",
-  h: {},
-};
+document.addEventListener("keyup", (ev) => {
+  const obj =
+    ruMap[ev.key.toLowerCase()] ||
+    enMap[ev.key.toLowerCase()] ||
+    txtMap[ev.code];
 
-map.f;
+  if (obj) {
+    obj.HTMLkey.classList.remove("key-active");
+  }
+});
 
-map["f"];
-
-const keytext = "f";
-
-map[keytext];
-
-function dhjfh(one) {
-  map[one];
-}
-
-dhjfh("f");
-
-dhjfh("b");
-
-dhjfh("d");
+// document.addEventListener("keydown", (ev) => {
+//   if (ev.key == "Shift") {
+//     Object.values(ruMap).forEach((i) => {
+//       i.HTMLkey.innerText = i.ruUpperCase;
+//     });
+//   }
+// });

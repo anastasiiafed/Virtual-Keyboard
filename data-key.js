@@ -92,6 +92,7 @@ let divOne = [
   },
   {
     id: "",
+    code: "Backspace",
     text: "Backspace",
   },
 ];
@@ -99,6 +100,7 @@ let divOne = [
 let divTwo = [
   {
     id: "",
+    code: "Tab",
     text: "Tab",
   },
   {
@@ -195,12 +197,14 @@ let divTwo = [
   {
     id: "",
     text: "Del",
+    code: "Delete",
   },
 ];
 
 let divThree = [
   {
     id: "",
+    code: "CapsLock",
     text: "CapsLock",
   },
   {
@@ -282,6 +286,7 @@ let divThree = [
   },
   {
     id: "",
+    code: "Enter",
     text: "Enter",
   },
 ];
@@ -289,6 +294,7 @@ let divThree = [
 let divFour = [
   {
     id: "",
+    code: "ShiftLeft",
     text: "Shift",
   },
   {
@@ -364,9 +370,11 @@ let divFour = [
   {
     id: "",
     ruLowCase: "🠕",
+    code: "ArrowUp",
   },
   {
     id: "",
+    code: "ShiftRight",
     text: "Shift",
   },
 ];
@@ -375,45 +383,56 @@ let divFive = [
   {
     id: "",
     text: "Ctrl",
+    code: "ControlLeft",
   },
   {
     id: "",
     text: "Win",
+    code: "MetaLeft",
   },
   {
     id: "",
     text: "Alt",
+    code: "AltLeft",
   },
   {
     id: "",
     text: "Space",
+    code: "Space",
   },
   {
     id: "",
     text: "Alt",
+    code: "AltRight",
   },
   {
     id: "",
     text: "🠔",
     ruLowCase: "🠔",
+    code: "ArrowLeft",
   },
   {
     id: "",
     text: "🠗",
     ruLowCase: "🠗",
+    code: "ArrowDown",
   },
   {
     id: "",
     text: "🠖",
     ruLowCase: "🠖",
+    code: "ArrowRight",
   },
   {
     id: "",
     text: "Ctrl",
+    code: "ControlRight",
   },
 ];
 
 const ruMap = {};
+const enMap = {};
+const txtMap = {};
 
 const allArr = divOne
   .concat(divTwo)
@@ -424,5 +443,13 @@ const allArr = divOne
 allArr.forEach((x) => {
   if (x.ruLowCase) {
     ruMap[x.ruLowCase] = x;
+  }
+
+  if (x.enLowCase) {
+    enMap[x.enLowCase] = x;
+  }
+
+  if (x.code) {
+    txtMap[x.code] = x;
   }
 });
