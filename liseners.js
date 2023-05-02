@@ -4,7 +4,13 @@ keys.forEach(function (hi) {
   hi.addEventListener("click", clicker);
 });
 
+const clickMouse = document.querySelectorAll("textarea");
+
 function clicker(event) {
+  event.srcElement.classList.add("key-active");
+  setTimeout(() => event.srcElement.classList.remove("key-active"), 70);
+
+  const e = new KeyboardEvent("keydown", { key: event.srcElement.innerHTML });
   console.log(event.srcElement.getAttribute("data"));
 }
 

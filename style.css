@@ -87,9 +87,13 @@ p {
   height: 40px;
   border-radius: 10px;
   margin: 2px;
-  cursor: sfg;
+  cursor: pointer;
 }
 
 .key-active {
+  background-color: aqua;
+}
+
+.key-all:active {
   background-color: aqua;
 }
